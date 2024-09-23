@@ -22,6 +22,10 @@ a{
 
 }
 
+h1{
+    font-size: 35px;
+}
+
 .menu{
 
     min-height: 80px;
@@ -85,6 +89,15 @@ a{
 }
 
 @media(max-width: 780px){
+
+    h1{
+        font-size: 35px;
+    }
+
+    .textos{
+
+        width: 50%;
+    }
     
     .hamburguer{
 
@@ -128,6 +141,16 @@ a{
 
     }
 
+    .imagens{
+
+        display: flex;
+        width: 50%;
+        height: auto;
+        border-radius:none;
+        box-shadow: none;
+
+    }
+
 }
 
 body{
@@ -150,7 +173,6 @@ body{
 .titulo-IMC{
 
     display: center;
-    font-size: 35px;
 }
 
 .Calc-IMC{
@@ -193,6 +215,7 @@ body{
 .caixa-IMC input::placeholder{
 
    color: #004200;
+
 }
 
 .botão-enviar-IMC{
@@ -214,6 +237,7 @@ body{
 .valor-final-IMC{
 
     color: black;
+
 }
 
 .título-principal{
@@ -229,10 +253,12 @@ body{
     display: flex;
     object-fit: contain;
     margin: auto;
-    height: 300px;
+    width: 70%;
+    height: auto;
     border-radius: 20%;
     padding-bottom: 0px;
     box-shadow: 5px 5px #004200;
+
 }
 
 .assinatura{
