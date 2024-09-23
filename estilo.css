@@ -1,0 +1,243 @@
+*{
+
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header{
+    
+    background-color: #004200;
+
+}
+
+a{
+
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+.menu{
+
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+}
+
+.item-menu{
+
+    list-style-type: none;
+
+}
+
+.navegação-menu{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+
+}
+
+.marca-menu{
+
+    font-size: 2rem;
+
+}
+
+.link-menu{
+
+    transition: 1s ease-in;
+
+}
+
+.hamburguer{
+
+    display: none;
+    cursor: pointer;
+
+}
+
+.barra{
+
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: whitesmoke;
+
+}
+
+.mobile-menu{
+
+    display: none;
+
+}
+
+@media(max-width: 780px){
+    
+    .hamburguer{
+
+        display: block;
+    }
+
+    .hamburguer.ativação .barra:nth-child(2){
+
+        opacity: 0;
+    }
+
+    .hamburguer.ativação .barra:nth-child(1){
+
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navegação-menu{
+
+        display: none;
+
+    }
+
+    .item-menu{
+
+        display: none;
+    }
+
+    .mobile-menu ul{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+
+    }
+
+    .mobile-menu .item-menu{
+
+        display: block;
+        padding-top: 1.2rem;
+
+    }
+
+}
+
+body{
+
+    background-color: #dceedc;
+
+}
+
+.textos{
+
+    background-color: #dceedc;
+    display: block;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.titulo-IMC{
+
+    display: center;
+    font-size: 35px;
+}
+
+.Calc-IMC{
+
+    display: flex;
+    flex: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px;
+
+}
+
+.calculadora-IMC{
+
+    flex: center;
+    padding-bottom: 30px;
+    margin-top: 10px;
+
+
+}
+
+.caixa-IMC input{
+
+
+    display: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    padding: 20px;
+    margin: 5px;
+    padding-bottom: 20px;
+    background:transparent;
+    border: 3px solid  #004200;
+    border-radius: 40px;
+    text-align: center;
+
+}
+
+.caixa-IMC input::placeholder{
+
+   color: #004200;
+}
+
+.botão-enviar-IMC{
+
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 5px;
+    background-color: #004200;
+    color: whitesmoke;
+    font-weight: bolder;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+
+.valor-final-IMC{
+
+    color: black;
+}
+
+.título-principal{
+
+    font-size: 35px;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.imagens{
+
+    display: block;
+    margin: auto;
+    height: 500px;
+    border-radius: 20%;
+    padding-bottom: 0px;
+    box-shadow: 5px 5px #004200;
+}
+
+.assinatura{
+
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+}
+
