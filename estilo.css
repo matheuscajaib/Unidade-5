@@ -226,9 +226,10 @@ body{
 
 .imagens{
 
-    display: block;
+    display: flex;
+    object-fit: contain;
     margin: auto;
-    height: 500px;
+    height: 300px;
     border-radius: 20%;
     padding-bottom: 0px;
     box-shadow: 5px 5px #004200;
